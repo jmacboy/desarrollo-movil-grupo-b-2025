@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PracticaIntents</string>
+    <string name="open_second_button">Abrir el segundo activity</string>
+    <string name="btn_enviar_datos">Enviar datos</string>
+    <string name="txt_name_hint">Ingrese su nombre</string>
+    <string name="welcome_message">Bienvenido %1$s</string>
+</resources>
