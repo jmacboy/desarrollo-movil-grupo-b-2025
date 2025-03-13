@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PracticaCalculadora</string>
+    <string name="divide_by_zero_error">Error, división por 0</string>
+</resources>
