@@ -1,6 +1,8 @@
 package com.example.practicarecyclerview.models
 
-class Person() {
+import java.io.Serializable
+
+class Person(): Serializable {
     var id: Int = 0
     var name: String = ""
     var lastName: String = ""

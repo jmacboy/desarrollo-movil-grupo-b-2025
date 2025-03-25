@@ -51,10 +51,11 @@ class PersonDetailActivity : AppCompatActivity() {
             email = binding.txtEmail.text.toString()
             lastName = binding.txtLastName.text.toString()
         }
-        val saved = viewModel.savePerson(person)
-        if (saved) {
-            val resultIntent = Intent()
-            resultIntent.putExtra("sentId", id)
+        val savedId = viewModel.savePerson(person)
+        if (savedId != -1) {
+            val isInsert = id == 0
+            person.id = savedId
+            val resultIntent = PersonListActivity.returnIntent(isInsert, person)
             setResult(1, resultIntent)
             finish()
         }

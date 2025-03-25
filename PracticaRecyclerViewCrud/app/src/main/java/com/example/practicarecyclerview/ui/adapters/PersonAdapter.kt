@@ -40,11 +40,17 @@ class PersonAdapter(
         notifyItemRemoved(index)
     }
 
-    fun updateById(sentId: Int) {
-        val index = data.indexOfFirst { it.id == sentId }
+    fun updateItem(personChanged: Person?) {
+        val index = data.indexOfFirst { it.id == personChanged?.id }
         if (index != -1) {
+            data[index] = personChanged!!
             notifyItemChanged(index)
         }
+    }
+
+    fun addItem(personChanged: Person?) {
+        data.add(1, personChanged!!)
+        notifyItemInserted(1)
     }
 
     class ViewHolder(private val binding: PersonItemViewBinding) :
