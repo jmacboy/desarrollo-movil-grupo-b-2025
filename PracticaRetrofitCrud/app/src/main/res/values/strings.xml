@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PracticaRetrofitCrud</string>
+    <string name="save_button">Guardar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="isbn_text">ISBN</string>
+    <string name="synopsis_text">Sinopsis</string>
+    <string name="image_url_text">URL de la Imagen</string>
+    <string name="editorial_text">Editorial</string>
+    <string name="author_text">Autor</string>
+    <string name="name_text">Nombre</string>
+    <string name="error_saving_book">Error guardando libro, intente nuevamente.</string>
+    <string name="empty_list_text">No hay ningún elemento en la lista. \nPara agregar uno, presione el botón +</string>
+
+</resources>
